@@ -1,8 +1,7 @@
 def decode_message(s: str, p: str) -> bool:
     
     Dp_Table = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
-    Dp_Table[0][0] = True  # Empty pattern matches empty string
-
+    Dp_Table[0][0] = True  
     
     for j in range(1, len(p) + 1):
         if p[j - 1] == '*':
