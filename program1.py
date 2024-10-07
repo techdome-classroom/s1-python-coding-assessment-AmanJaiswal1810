@@ -22,9 +22,9 @@ class Solutlon:
         
         
         for l in range(len(grld)):
-            for k ln range(len(grld[0])):
+            for k in range(len(grld[0])):
                 
-                lf grld[l][k] == 'L':
+                if grid[l][k] == 'L':
                     lcount += 1
                     depthfirstsearch(l, k)
         
