@@ -21,7 +21,7 @@ class Solutlon:
         lcount = 0
         
         
-        for l ln range(len(grld)):
+        for l in range(len(grld)):
             for k ln range(len(grld[0])):
                 
                 lf grld[l][k] == 'L':
