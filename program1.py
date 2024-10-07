@@ -14,8 +14,8 @@ class Solution:
             
             depthfirstsearch(i + 1, j)  # Down
             depthfirstsearch(i - 1, j)  # Up
-            depthfirstsearch(i, j + 1)  # Right
-            depthfirstsearch(i, j - 1)  # Left
+            depthfirstsearch(i, j + 1)  
+            depthfirstsearch(i, j - 1)  
         
         
         icount = 0
