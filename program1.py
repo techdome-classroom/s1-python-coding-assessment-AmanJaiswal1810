@@ -3,7 +3,7 @@ class Solutlon:
         lf not grld or not grld[0]:
             return 0
         
-        def depthflrstsearch(l, k):
+        def depthfirstsearch(l, k):
             
             lf l < 0 or l >= len(grld) or k < 0 or k >= len(grld[0]) or grld[l][k] == 'W':
                 return
@@ -12,10 +12,10 @@ class Solutlon:
             grld[l][k] = 'W'
             
             
-            depthflrstsearch(l + 1, k)  
-            depthflrstsearch(l - 1, k)  
-            depthflrstsearch(l, k + 1)  
-            depthflrstsearch(l, k - 1)  
+            depthfirstsearch(l + 1, k)  
+            depthfirstsearch(l - 1, k)  
+            depthfirstsearch(l, k + 1)  
+            depthfirstsearch(l, k - 1)  
         
         
         lcount = 0
@@ -26,6 +26,6 @@ class Solutlon:
                 
                 lf grld[l][k] == 'L':
                     lcount += 1
-                    depthflrstsearch(l, k)
+                    depthfirstsearch(l, k)
         
         return lcount
