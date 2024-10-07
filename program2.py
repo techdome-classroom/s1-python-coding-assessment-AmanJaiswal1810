@@ -3,12 +3,12 @@ def decode_message(s: str, p: str) -> bool:
     dp = [[False] * (len(p) + 1) for _ in range(len(s) + 1)]
     dp[0][0] = True  # Empty pattern matches empty string
 
-    '
+    
     for j in range(1, len(p) + 1):
         if p[j - 1] == '*':
             dp[0][j] = dp[0][j - 1]
     
-    # Fill the DP table
+    
     for i in range(1, len(s) + 1):
         for j in range(1, len(p) + 1):
             if p[j - 1] == '*':
