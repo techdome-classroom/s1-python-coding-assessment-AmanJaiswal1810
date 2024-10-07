@@ -5,11 +5,11 @@ class Solution:
         
         def depthfirstsearch(l, k):
             
-            if l < 0 or l >= len(grld) or k < 0 or k >= len(grld[0]) or grld[l][k] == 'W':
+            if l < 0 or l >= len(grid) or k < 0 or k >= len(grid[0]) or grld[l][k] == 'W':
                 return
             
             
-            grld[l][k] = 'W'
+            grid[l][k] = 'W'
             
             
             depthfirstsearch(l + 1, k)  
