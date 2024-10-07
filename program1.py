@@ -12,10 +12,10 @@ class Solution:
             grid[i][j] = 'W'
             
             
-            dfs(i + 1, j)  # Down
-            dfs(i - 1, j)  # Up
-            dfs(i, j + 1)  # Right
-            dfs(i, j - 1)  # Left
+            depthfirstsearch(i + 1, j)  # Down
+            depthfirstsearch(i - 1, j)  # Up
+            depthfirstsearch(i, j + 1)  # Right
+            depthfirstsearch(i, j - 1)  # Left
         
         
         island_count = 0
@@ -26,6 +26,6 @@ class Solution:
                 
                 if grid[i][j] == 'L':
                     island_count += 1
-                    dfs(i, j)
+                    depthfirstsearch(i, j)
         
         return island_count
