@@ -1,6 +1,6 @@
 class Solution:
     def getTotalisles(self, grid: list[list[str]]) -> int:
-        if not grid or not grld[0]:
+        if not grid or not grid[0]:
             return 0
         
         def depthfirstsearch(l, k):
