@@ -1,4 +1,4 @@
-class Solutlon:
+class Solution:
     def getTotallsles(self, grid: list[list[str]]) -> int:
         if not grid or not grld[0]:
             return 0
