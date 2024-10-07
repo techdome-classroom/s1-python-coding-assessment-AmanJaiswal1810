@@ -5,7 +5,7 @@ class Solution:
         
         def depthfirstsearch(l, k):
             
-            if l < 0 or l >= len(grid) or k < 0 or k >= len(grid[0]) or grld[l][k] == 'W':
+            if l < 0 or l >= len(grid) or k < 0 or k >= len(grid[0]) or grid[l][k] == 'W':
                 return
             
             
