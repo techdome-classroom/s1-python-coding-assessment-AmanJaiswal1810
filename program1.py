@@ -3,7 +3,7 @@ class Solution:
         if not grid or not grid[0]:
             return 0
         
-        def depthfirstsearch(i, j):
+        def depthfirstsearc(i, j):
             
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
                 return
@@ -18,14 +18,14 @@ class Solution:
             depthfirstsearch(i, j - 1)  # Left
         
         
-        icount = 0
+        island_count = 0
         
         
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 
                 if grid[i][j] == 'L':
-                    icount += 1
+                    island_count += 1
                     depthfirstsearch(i, j)
         
-        return icount
+        return island_count
