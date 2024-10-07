@@ -17,7 +17,7 @@ class Solution:
             dfs(i, j + 1)  # Right
             dfs(i, j - 1)  # Left
         
-        # Initialize island count
+        
         island_count = 0
         
         # Iterate through each cell in the grid
