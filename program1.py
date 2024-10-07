@@ -21,8 +21,8 @@ class Solution:
         lcount = 0
         
         
-        for l in range(len(grld)):
-            for k in range(len(grld[0])):
+        for l in range(len(grid)):
+            for k in range(len(grid[0])):
                 
                 if grid[l][k] == 'L':
                     lcount += 1
