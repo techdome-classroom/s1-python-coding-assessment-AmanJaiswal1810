@@ -3,29 +3,29 @@ class Solution:
         if not grid or not grid[0]:
             return 0
         
-        def depthfirstsearch(i, j):
+        def depthfirstsearch(i, k):
             
-            if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
+            if i < 0 or i >= len(grid) or k < 0 or k >= len(grid[0]) or grid[i][k] == 'W':
                 return
             
             
-            grid[i][j] = 'W'
+            grid[i][k] = 'W'
             
             
-            depthfirstsearch(i + 1, j)  
-            depthfirstsearch(i - 1, j)  
-            depthfirstsearch(i, j + 1)  
-            depthfirstsearch(i, j - 1)  
+            depthfirstsearch(i + 1, k)  
+            depthfirstsearch(i - 1, k)  
+            depthfirstsearch(i, k + 1)  
+            depthfirstsearch(i, k - 1)  
         
         
         icount = 0
         
         
         for i in range(len(grid)):
-            for j in range(len(grid[0])):
+            for k in range(len(grid[0])):
                 
-                if grid[i][j] == 'L':
+                if grid[i][k] == 'L':
                     icount += 1
-                    depthfirstsearch(i, j)
+                    depthfirstsearch(i, k)
         
         return icount
