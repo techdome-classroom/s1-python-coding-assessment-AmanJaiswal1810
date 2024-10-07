@@ -4,7 +4,7 @@ class Solution:
             return 0
         
         def dfs(i, j):
-            # Boundary and water check
+            
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
                 return
             
