@@ -1,31 +1,31 @@
 class Solution:
-    def getTotalisles(self, grid: list[list[str]]) -> int:
+    def getTotalIsles(self, grid: list[list[str]]) -> int:
         if not grid or not grid[0]:
             return 0
         
-        def depthfirstsearch(l, k):
+        def depthfirstsearch(i, k):
             
-            if l < 0 or l >= len(grid) or k < 0 or k >= len(grid[0]) or grid[l][k] == 'W':
+            if i < 0 or i >= len(grid) or k < 0 or k >= len(grid[0]) or grid[i][k] == 'W':
                 return
             
             
-            grid[l][k] = 'W'
+            grid[i][k] = 'W'
             
             
-            depthfirstsearch(l + 1, k)  
-            depthfirstsearch(l - 1, k)  
-            depthfirstsearch(l, k + 1)  
-            depthfirstsearch(l, k - 1)  
+            depthfirstsearch(i + 1, k)  
+            depthfirstsearch(i - 1, k)  
+            depthfirstsearch(i, k + 1)  
+            depthfirstsearch(i, k - 1)  
         
         
-        lcount = 0
+        icount = 0
         
         
-        for l in range(len(grid)):
+        for i in range(len(grid)):
             for k in range(len(grid[0])):
                 
-                if grid[l][k] == 'L':
-                    lcount += 1
-                    depthfirstsearch(l, k)
+                if grid[i][k] == 'L':
+                    icount += 1
+                    depthfirstsearch(i, k)
         
-        return lcount
+        return icount
