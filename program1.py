@@ -11,7 +11,7 @@ class Solution:
             
             grid[i][j] = 'W'
             
-            # Explore all four directions
+            
             dfs(i + 1, j)  # Down
             dfs(i - 1, j)  # Up
             dfs(i, j + 1)  # Right
