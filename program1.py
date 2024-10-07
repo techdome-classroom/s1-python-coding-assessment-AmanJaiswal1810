@@ -23,7 +23,7 @@ class Solution:
         
         for i in range(len(grid)):
             for j in range(len(grid[0])):
-                # Start a DFS for each new island found
+                
                 if grid[i][j] == 'L':
                     island_count += 1
                     dfs(i, j)
