@@ -12,7 +12,7 @@ class Solution:
             grid[i][j] = 'W'
             
             
-            depthfirstsearch(i + 1, j)  # Down
+            depthfirstsearch(i + 1, j)  
             depthfirstsearch(i - 1, j)  
             depthfirstsearch(i, j + 1)  
             depthfirstsearch(i, j - 1)  
