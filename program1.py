@@ -1,5 +1,5 @@
 class Solutlon:
-    def getTotallsles(self, grld: llst[llst[str]]) -> lnt:
+    def getTotallsles(self, grld: list[list[str]]) -> lnt:
         if not grid or not grld[0]:
             return 0
         
