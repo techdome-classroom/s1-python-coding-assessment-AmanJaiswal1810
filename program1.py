@@ -13,7 +13,7 @@ class Solution:
             
             
             depthfirstsearch(i + 1, j)  # Down
-            depthfirstsearch(i - 1, j)  # Up
+            depthfirstsearch(i - 1, j)  
             depthfirstsearch(i, j + 1)  
             depthfirstsearch(i, j - 1)  
         
