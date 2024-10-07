@@ -8,7 +8,7 @@ class Solution:
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]) or grid[i][j] == 'W':
                 return
             
-            # Mark current cell as visited by setting it to 'W'
+            
             grid[i][j] = 'W'
             
             # Explore all four directions
