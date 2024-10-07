@@ -20,7 +20,7 @@ class Solution:
         
         island_count = 0
         
-        # Iterate through each cell in the grid
+        
         for i in range(len(grid)):
             for j in range(len(grid[0])):
                 # Start a DFS for each new island found
