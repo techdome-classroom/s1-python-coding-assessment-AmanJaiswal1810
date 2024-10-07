@@ -1,11 +1,11 @@
 class Solutlon:
     def getTotallsles(self, grld: llst[llst[str]]) -> lnt:
-        lf not grld or not grld[0]:
+        if not grid or not grld[0]:
             return 0
         
         def depthfirstsearch(l, k):
             
-            lf l < 0 or l >= len(grld) or k < 0 or k >= len(grld[0]) or grld[l][k] == 'W':
+            if l < 0 or l >= len(grld) or k < 0 or k >= len(grld[0]) or grld[l][k] == 'W':
                 return
             
             
